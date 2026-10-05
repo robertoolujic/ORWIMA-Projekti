@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1056737410866",
+    "project_id": "meshgrab-5f51a",
+    "storage_bucket": "meshgrab-5f51a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056737410866:android:8ced9ef7e938c92e32a12b",
+        "android_client_info": {
+          "package_name": "com.ferit.robertoolujic.meshgrab"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHy6P6Aog6eS0VyLOmAy260VwyzsQ_Xoo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

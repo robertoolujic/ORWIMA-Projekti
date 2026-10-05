@@ -1,0 +1,130 @@
+.header {
+    z-index: 2;
+    display: grid;
+    top: 0;
+    position: sticky;
+    grid-template-columns: 3fr 6fr 3fr;
+    font-family: 'Azeret Mono', monospace;
+    color: white;
+    background-color: #009760;
+    font-weight: 700;
+    font-size: 300%;
+    width: auto;
+    height: 60px;
+    padding: 10px;
+}
+@media (max-width:1000px)
+{
+    .header {
+    grid-template-columns: 1fr 10fr 1fr;
+    }
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.header-banner {
+    padding: 0px 10px 0px 45px;
+    background-image: url("../images/logo.png");
+    word-break: keep-all;
+    background-repeat: no-repeat;
+    background-size: 54px;
+}
+
+@media (max-width:1000px) {
+    .header-banner {
+        display: none;
+    }
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.icon {
+    display: flex;
+    height: 50px;
+    width: 50px;
+}
+
+@media (min-width:1000px) {
+    .icon:nth-child(-n+2) {
+        display: none;
+    }
+}
+
+#search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+#search-field {
+    width: 70%;
+    margin-left: auto;
+    font-family: 'Azeret Mono', monospace;
+    font-size: 35%;
+    padding: 15px;
+    height: 45px;
+    border-radius: 45px;
+    border-style: none;
+    background-color: white;
+}
+
+.search-button {
+    margin-right: auto;
+    margin-left: 5px;
+    height: 45px;
+    width: 45px;
+    border-radius: 45px;
+    border-style: none;
+    background-color: white;
+    background-image: url("https://img.icons8.com/?size=100&id=e4NkZ7kWAD7f&format=png&color=000000");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+.user-button {
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    word-break: keep-all;
+    align-items: right;
+    justify-content: right;
+    font-size: 50%;
+}
+
+.user-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 1000px)
+{
+    .user-icon {
+        font-size: 0;
+    }
+}
+    .user-icon img {
+        height: 50px;
+        width: 50px;
+    }
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.header a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+}
+
+button {
+    background: transparent;
+    border: transparent;
+}

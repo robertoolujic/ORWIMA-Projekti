@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link href="images/logo.png" rel="icon">
+    <link href="styles/header.css" rel="stylesheet">
+    <link href="styles/likebutton.css" rel="stylesheet">
+    <link href="styles/container.css" rel="stylesheet">
+    <link href="styles/collectionCard.css" rel="stylesheet">
+    <link href="styles/user.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+            <div class="header-icons">
+                <a class="header-banner" href="index.html">eshGrab</a>
+                <a class="icon" href="index.html">
+                    <img src="images/logo.png">
+                </a>
+                <a class="icon" href="upload.html">
+                    <img src="https://img.icons8.com/?size=100&id=14090&format=png&color=FFFFFF">
+                </a>
+            </div>
+        </div>
+        <form id="search-form" action="/index.html" method="GET">
+            <input id="search-field" name="q" type="search" placeholder="Search...">
+            <button class="search-button" type="submit"></button>
+        </form>
+        <div class="user-button">
+            <a class="user-icon" href="user.html?id=aqecIWECEbTSH1odriz9">
+                Profile <img src="https://img.icons8.com/?size=100&id=98957&format=png&color=FFFFFF">
+            </a>
+        </div>
+    </div>
+    <div class="profile">
+        <img id="avatar">
+        <div class="user-info">
+            <div id="name"></div>
+            <div id="bio"></div>
+            <div class="stats">
+                <div class="info-column">
+                    <span>Following:</span>
+                    <span id="following"></span>
+                </div>
+                <div class="info-column">
+                    <span>Followers:</span>
+                    <span id="followers"></span>
+                </div>
+                <div class="info-column">
+                    <span>Likes:</span>
+                    <span id="likes"></span>
+                </div>
+            </div>
+        <span id="info-span">Collections:</span>
+            <div id="collections">
+            </div>
+        </div>
+    </div>
+    <div id="page-content">
+        <span id="info-span">Uploaded models:</span>
+        <div id="grid">
+        </div>
+    </div>
+    <script type="module" src="scripts/user.js"></script>
+</body>
+
+</html>

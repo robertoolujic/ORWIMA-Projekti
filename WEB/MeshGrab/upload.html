@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload | MeshGrab</title>
+    <link href="images/logo.png" rel="icon">
+    <link href="styles/header.css" rel="stylesheet">
+    <link href="styles/footer.css" rel="stylesheet">
+    <link href="styles/likebutton.css" rel="stylesheet">
+    <link href="styles/upload.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+            <div class="header-icons">
+                <a class="header-banner" href="index.html">eshGrab</a>
+                <a class="icon" href="index.html">
+                    <img src="images/logo.png">
+                </a>
+                <a class="icon" href="upload.html">
+                    <img src="https://img.icons8.com/?size=100&id=14090&format=png&color=FFFFFF">
+                </a>
+            </div>
+        </div>
+        <form id="search-form" action="/index.html" method="GET">
+            <input id="search-field" name="q" type="search" placeholder="Search...">
+            <button class="search-button" type="submit"></button>
+        </form>
+        <div class="user-button">
+            <a class="user-icon" href="user.html?id=aqecIWECEbTSH1odriz9">
+                Profile <img src="https://img.icons8.com/?size=100&id=98957&format=png&color=FFFFFF">
+            </a>
+        </div>
+    </div>
+    <div class="page-content" id="page-content">
+        <div id="gallery">
+            <button onclick="uploadPage.loadPreviousImage()">
+                <img id="previousImageIcon">
+            </button>
+            <button onclick="uploadPage.addImage()">
+                <img id="addImageIcon" src="https://img.icons8.com/?size=100&id=60628&format=png&color=009760">
+            </button>
+            <img id="thumbnail" src="https://www.photobookseh.ca/storage/designer/969/pages/12212.jpg?cache=1302618539">
+            <button onclick="uploadPage.removeImage()">
+                <img id="removeImageIcon" src="https://img.icons8.com/?size=100&id=47258&format=png&color=009760" class="hidden">
+            </button>
+            <button onclick="uploadPage.loadNextImage()">
+                <img id="nextImageIcon">
+            </button>
+        </div>
+        <div class="file-container">
+            <button id="file-button" onclick="uploadPage.addFile()"><img src="https://img.icons8.com/?size=100&id=11550&format=png&color=000000"></button>
+            <div id="files"></div>
+        </div>
+        <form id="title-form" class="form" action="/index.html" method="GET">
+            <input id="title-field" class="field" name ="title"  type="search" placeholder="Item title">
+        </form>
+        <form id="description-form" class="form" action="/index.html" method="GET">
+            <input id="description-field" class="field" name ="description"  type="search" placeholder="Item description">
+        </form>
+        <button id="upload-button" onclick="uploadPage.uploadModel()"><img src="https://img.icons8.com/?size=100&id=368&format=png&color=000000"></button>
+    </div>
+    <div class="footer">
+        <div class="footer-left">
+            <a href="faq.html">about us</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+        <div class="footer-center">
+            FAQ
+        </div>
+        <div class="footer-right">
+            FAQ
+        </div>
+    </div>
+    <script type="module" src="scripts/upload.js"></script>
+</body>
+
+</html>
